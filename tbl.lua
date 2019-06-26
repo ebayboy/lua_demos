@@ -38,3 +38,5 @@ print("After self sort:", table.concat(a, ","))
 table.remove(a, 2)
 print("After delete:", table.concat(a, ","))
 
+print(table.concat(a, ",", 1, 2))
+
