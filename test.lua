@@ -1,3 +1,4 @@
+--test.lua
 
 local n_table = 
 {
@@ -36,3 +37,4 @@ print(res("test"))
 local a = res
 print(a("123"))
 
+-- test.lua end file
