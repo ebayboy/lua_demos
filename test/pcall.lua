@@ -10,6 +10,6 @@ end
 
 local ok, res= pcall(div, 6, 2)
 
+print("ok:", ok)
 print("res:", res)
-print("err:", err)
 
