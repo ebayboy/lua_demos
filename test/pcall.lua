@@ -8,10 +8,8 @@ local function div(a, b)
 	return  a/b
 end
 
-local ok, err = pcall(div, 6, 0)
+local ok, res= pcall(div, 6, 2)
 
-if (ok == false) then
-	print("ok:", ok)
-	print("error:", err)
-end
+print("res:", res)
+print("err:", err)
 
