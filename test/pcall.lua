@@ -1,7 +1,7 @@
 
-
 local function div(a, b)
 	if (b == 0) then
+		--pcall failed
 		error("Error: div 0!!!")
 	end
 
