@@ -27,13 +27,14 @@ end
 
 -- 在沙盒内执行脚本, 出错时返回错误, nil表示正确
 function ExecuteInSandBox( SandBox, Script )
-	--loadstring 
+	--loadstring 返回 函数脚本， 和编译信息
 	local ScriptFunc, CompileError = loadstring( Script )
 
 	if CompileError then
 		return CompileError
 	end
 
+	--set function execution env
 	setfenv( ScriptFunc, SandBox )
 
 	local Result, RuntimeError = pcall( ScriptFunc )
